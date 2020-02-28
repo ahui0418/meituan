@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美团实战</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/common.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <!-- 整个页面 start -->
+    <div>
+        <!-- 网站的头部 start -->
+        <div id="head">
+            <div class="w1170 top bc">
+                <ul class="fl">
+                    <li class="fl collection"><a href="#">收藏美团</a></li>
+                    <li class="fl login"><a href="#">登录</a></li>
+                    <li class="fl reg"><a href="#">注册</a></li>
+                </ul>
+                <ul class="fr">
+                    <li><a href="#" class="my" style="border-right: 0;">我的订单</a></li>
+                    <li>
+                        <a href="#">我的美团</a>
+                        <i class="sanjiao"></i>
+                        <div class="cover-list">
+                            <ul>
+                                <li>申请退换货</li>
+                            </ul>
+                        </div>
+                        <div class="cover">我的美团<i class="sanjiaot"></i></div>
+                    </li>
+                    <li><a href="#">最近浏览</a>
+                        <i class="sanjiao"></i>
+                        <div class="cover-list">
+                            <ul>
+                                <li>申请退换货</li>
+                            </ul>
+                        </div>
+                        <div class="cover coverz">最近浏览<i class="sanjiaot"></i></div>
+                    </li>
+                    <li><a href="#" class="link">联系客服</a>
+                        <i class="sanjiao"></i>
+                        <div class="cover-list">
+                            <ul>
+                                <li>申请退换货</li>
+                                <li>申请退换货</li>
+                                <li>申请退换货</li>
+                                <li>申请退换货</li>
+                                <li>申请退换货</li>
+                                <li>申请退换货</li>
+                            </ul>
+                        </div>
+                        <div class="cover coverl">联系客服<i class="sanjiaot"></i></div>
+                    </li>
+                    <li><a href="#">我是商家</a>
+                        <i class="sanjiao"></i>
+                        <div class="cover-list">
+                            <ul>
+                                <li>申请退换货</li>
+                            </ul>
+                        </div>
+                        <div class="cover">我是商家<i class="sanjiaot"></i></div>
+                    </li>
+                    <li><a href="#">代理商招募</a>
+                        <i class="sanjiao"></i>
+                        <div class="cover-list">
+                            <ul>
+                                <li>申请退换货</li>
+                            </ul>
+                        </div>
+                        <div class="cover">代理商招募<i class="sanjiaot"></i></div>
+                    </li>
+                    <li><a href="#">更多</a>
+                        <i class="sanjiao"></i>
+                        <div class="cover-list">
+                            <ul>
+                                <li>申请退换货</li>
+                            </ul>
+                        </div>
+                        <div class="cover coverg">更多<i class="sanjiaot"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w1170 bc" id="logo">
+            <div class="fl logo">
+                <h1>
+                    <a href="#">
+                        <img src="./images/logo.png" alt="出错了">
+                    </a>
+                </h1>
+                <ul>
+                    <li><strong>北京</strong></li>
+                    <li><a>切换城市</a></li>
+                </ul>
+            </div>
+            <div class="fl" id="search">
+                <div class="search">
+                    <ul class="searchk">
+                        <li>
+                            <button class="tuangou">
+                                <a href="#">团购</a>
+                                <i class="sanjiao"></i>
+                                <div class="tuangou-toggle" id="tuangou-toggle">商家</div>
+                            </button>
+                        </li>
+                        <li><input type="text" placeholder="请输入商品名称，地址等"></li>
+                        <button>搜索</button>
+                    </ul>
+                    <ul class="searchb">
+                        <li><a href="#">虾吃虾涮</a></li>
+                        <li><a href="#">比格</a></li>
+                        <li><a href="#">大渔</a></li>
+                        <li><a href="#">烤肉</a></li>
+                        <li><a href="#">蛋糕</a></li>
+                        <li><a href="#">海鲜</a></li>
+                        <li><a href="#">味多美</a></li>
+                        <li><a href="#">东来顺</a></li>
+                        <li><a href="#">吉野家</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <ul class="tui">
+                    <li>
+                        <a href="#">
+                        <img src="./images/tui.png" alt="">
+                        <p>随时退</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <img src="./images/manyi.png" alt="">
+                        <p>不满意免单</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <img src="./images/guoqi.png" alt="">
+                        <p>过期退</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 网站的头部 end -->
+        <!-- 网站的导航 start -->
+        <div class="w1170 bc" id="nav">
+            <h2 class="fl">
+                <a href="#">全部分类</a>
+                <ul class="subnav">
+                    <li>
+                        <a href="#" class="fl">美食</a>
+                        <a href="#" class="fr">代金券</a>
+                        <a href="#" class="fr">自助餐&nbsp;</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+
+                    </ul>
+                    <li>
+                        <a href="#" class="fl">酒店/客栈</a>
+                        <a href="#" class="fr">经济型酒店</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+                        
+                    </ul>
+                    <li>
+                        <a href="#" class="fl">猫眼电影/在线选座</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+                        
+                    </ul>
+                    <li>
+                        <a href="#" class="fl">KTV</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fl">休闲娱乐</a>
+                        <a href="#" class="fr">温泉</a>
+                        <a href="#" class="fr">足疗按摩&nbsp;</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+                        
+                    </ul>
+                    <li>
+                        <a href="#" class="fl">周边游/旅游</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+                        
+                    </ul>
+                    <li>
+                        <a href="#" class="fl">机票</a>
+                        <a href="#" class="fr">国际机票</a>
+                        <a href="#" class="fr">国内机票&nbsp;</a>
+                    </li>
+                    <li>
+                        <a href="#" class="fl">生活服务</a>
+                        <a href="#" class="fr">个性写真</a>
+                        <a href="#" class="fr">婚纱摄影&nbsp;</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+                        
+                    </ul>
+                    <li>
+                        <a href="#" class="fl">丽人</a>
+                        <a href="#" class="fr">美甲美睫</a>
+                        <a href="#" class="fr">美发&nbsp;</a>
+                        <span>></span>
+                    </li>
+                    <ul class="threenav">
+                        
+                    </ul>
+                </ul>
+            </h2>
+            <ul class="rightnav fl">
+                <li class="fl"><a href="#">首页</a></li>
+                <li class="fl"><a href="#">今日新单</a></li>
+                <li class="fl"><a href="#">美食</a></li>
+                <li class="fl"><a href="#">身边外卖</a></li>
+            </ul>
+        </div>
+        <!-- 网站的导航 end -->
+        <!-- 网站的热门 start -->
+        <div class="hot fl">
+            <ul class="area">
+                <li class="area1">
+                    <i class="allhot"></i>
+                    <span>热门团购</span>
+                    <a href="#">自助餐</a>
+                    <a href="#">火锅</a>
+                    <a href="#">小吃快餐</a>
+                    <a href="#">烧烤烤肉</a>
+                    <a href="#">西餐</a>
+                    <a href="#">日韩料理</a>
+                    <a href="#">甜点饮品</a>
+                    <a href="#">香锅烤鱼</a>
+                    <a href="#">海鲜</a>
+                </li>
+                <li class="area2">
+                    <i class="allarea"></i>
+                    <span>全部区域</span>
+                    <a href="#">朝阳区</a>
+                    <a href="#">海淀区</a>
+                    <a href="#">丰台区</a>
+                    <a href="#">西城区</a>
+                    <a href="#">东城区</a>
+                    <a href="#">昌平区</a>
+                    <a href="#">石景山区</a>
+                    <a href="#">通州区</a>
+                    <a href="#">大兴区</a>
+                    <select id="area">
+                        <option value="">更多</option>
+                        <option value="">密云区</option>
+                        <option value="">顺义区</option>
+                    </select>
+                </li>
+                <li class="area3">
+                    <i class="business"></i>
+                    <span>热门商圈</span>
+                    <a href="#">望京</a>
+                    <a href="#">昌平镇</a>
+                    <a href="#">亦庄</a>
+                    <a href="#">中关村</a>
+                    <a href="#">远大路</a>
+                    <a href="#">西红门</a>
+                    <a href="#">大望路</a>
+                    <a href="#">黄村</a>
+                    <a href="#">牡丹园/北太平庄</a>
+                </li>
+            </ul>
+            <div class="show">
+                <ul class="picshow" id="picshow">
+                    <li>
+                        <div class="picturel fl">
+                            <img src="./images/tuijian1.png" alt="">
+                            <h4><a href="#">南京大排档</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price">￥85</div>
+                        </div>
+                        <div class="fl picture-line"></div>
+                        <div class="picturer fr">
+                            <img src="./images/tuijian2.png" alt="">
+                            <h4><a href="#">上海小南国</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price1">￥85</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picturel fl">
+                            <img src="./images/tuijian3.png" alt="">
+                            <h4><a href="#">南京大排档</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price">￥99</div>
+                        </div>
+                        <div class="fl picture-line"></div>
+                        <div class="picturer fr">
+                            <img src="./images/tuijian4.png" alt="">
+                            <h4><a href="#">上海小南国</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price1">￥99</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picturel fl">
+                            <img src="./images/tuijian5.png" alt="">
+                            <h4><a href="#">南京大排档</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price">￥99</div>
+                        </div>
+                        <div class="fl picture-line"></div>
+                        <div class="picturer fr">
+                            <img src="./images/tuijian6.png" alt="">
+                            <h4><a href="#">上海小南国</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price1">￥99</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="picturel fl">
+                            <img src="./images/tuijian7.png" alt="">
+                            <h4><a href="#">南京大排档</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price">￥99</div>
+                        </div>
+                        <div class="fl picture-line"></div>
+                        <div class="picturer fr">
+                            <img src="./images/tuijian8.png" alt="">
+                            <h4><a href="#">上海小南国</a></h4>
+                            <p>100元代金券1张，全场通用，可叠加使用</p>
+                            <div class="price1">￥99</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btnleft" id="btnLeft"></div>
+                <div class="btnRight"></div>
+            </div>
+        </div>
+        <div class="fr saoma">
+            <div class="ma">
+                <img src="./images/1yuan.png" alt="">
+            </div>
+            <div class="new">
+                <img src="./images/meiri.png" alt="">
+            </div>
+        </div>
+        <!-- 网站的热门 end -->
+        <!-- 美食 start -->
+        <div class="gfnav w1170 bc">
+            <ul class="side-nav" id="side-nav">
+                <li class="active">
+                    <i class="cbg1"></i>
+                    <p>美食</p>
+                </li>
+                <li>
+                    <i class="cbg2"></i>
+                    <p>休闲娱乐</p>
+                </li>
+                <li>
+                    <i class="cbg3"></i>
+                    <p>猫眼电影</p>
+                </li>
+                <li>
+                    <i class="cbg4"></i>
+                    <p>酒店</p>
+                </li>
+                <li>
+                    <i class="cbg5"></i>
+                    <p>生活服务</p>
+                </li>
+                <li>
+                    <i class="cbg6"></i>
+                    <p>丽人</p>
+                </li>
+                <li>
+                    <i class="cbg7"></i>
+                    <p>旅游</p>
+                </li>
+            </ul>
+            <h3 class="fl">
+                <i class="gflogo"></i>
+                <a href="#">美食</a>
+            </h3>
+            <div class="fr">
+                <ul class="gfnavr">
+                    <li>美食</li>
+                    <li>代金券</li>
+                    <li>自助餐</li>
+                    <li>火锅</li>
+                    <li>烧烤烤肉</li>
+                    <li>香锅烤鱼</li>
+                    <li>西餐</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="goodfood w1170 bc">
+            <ul class="gflist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="moregf w1170 bc">
+            <a href="#">更多美食团购，请点击查看<span> ></span></a>
+        </div>
+        <!-- 美食 end -->
+        <!-- 休闲娱乐 start -->
+        <div class="xxnav w1170 bc">
+            <h3 class="fl">
+                <i class="xxlogo"></i>
+                <a href="#">休闲娱乐</a>
+            </h3>
+            <div class="fr">
+                <ul class="xxnavr">
+                    <li>休闲娱乐</li>
+                    <li>运动健身</li>
+                    <li>足疗按摩</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="relax w1170 bc">
+            <ul class="xxlist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="morexx w1170 bc">
+            <a href="#">更多休闲娱乐，请点击查看<span> ></span></a>
+        </div>
+        <!-- 休闲娱乐 end -->
+        <!-- 猫眼电影 start -->
+        <div class="mynav w1170 bc">
+            <h3 class="fl">
+                <i class="mylogo"></i>
+                <a href="#">猫眼电影</a>
+            </h3>
+            <div class="fr">
+                <ul class="mynavr">
+                    <li>猫眼电影</li>
+                    <li>电影票团购</li>
+                    <li>电影院</li>
+                    <li>在线选座</li>
+                    <li>最新电影</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="movie w1170 bc">
+            <ul class="mylist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="moremy w1170 bc">
+            <a href="#">更多猫眼电影，请点击查看<span> ></span></a>
+        </div>
+        <!-- 猫眼电影 end -->
+        <!-- 酒店 start -->
+        <div class="jdnav w1170 bc">
+            <h3 class="fl">
+                <i class="jdlogo"></i>
+                <a href="#">酒店</a>
+            </h3>
+            <div class="fr">
+                <ul class="jdnavr">
+                    <li>酒店</li>
+                    <li>经济型酒店</li>
+                    <li>主题型酒店</li>
+                    <li>豪华酒店</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hotile w1170 bc">
+            <ul class="jdlist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="morejd w1170 bc">
+            <a href="#">更多酒店，请点击查看<span> ></span></a>
+        </div>
+        <!-- 酒店 end -->
+        <!-- 生活服务 start -->
+        <div class="shnav w1170 bc">
+            <h3 class="fl">
+                <i class="shlogo"></i>
+                <a href="#">生活服务</a>
+            </h3>
+            <div class="fr">
+                <ul class="shnavr">
+                    <li>生活服务</li>
+                    <li>课程培训</li>
+                    <li>母婴亲子</li>
+                    <li>配镜</li>
+                    <li>其他摄影</li>
+                    <li>体检/齿科</li>
+                    <li>汽车服务</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="live w1170 bc">
+            <ul class="shlist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="moresh w1170 bc">
+            <a href="#">更多生活服务，请点击查看<span> ></span></a>
+        </div>
+        <!-- 生活服务 end -->
+        <!-- 丽人 start -->
+        <div class="lrnav w1170 bc">
+            <h3 class="fl">
+                <i class="lrlogo"></i>
+                <a href="#">丽人</a>
+            </h3>
+            <div class="fr">
+                <ul class="lrnavr">
+                    <li>丽人</li>
+                    <li>美发</li>
+                    <li>瑜伽舞蹈</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="buetiful w1170 bc">
+            <ul class="lrlist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="morelr w1170 bc">
+            <a href="#">更多丽人团购，请点击查看<span> ></span></a>
+        </div>
+        <!-- 丽人 end -->
+        <!-- 旅游 start -->
+        <div class="lynav w1170 bc">
+            <h3 class="fl">
+                <i class="lylogo"></i>
+                <a href="#">旅游</a>
+            </h3>
+            <div class="fr">
+                <ul class="lynavr">
+                    <li>旅游</li>
+                    <li>景点门票</li>
+                    <li>国内游</li>
+                    <li>境外游</li>
+                    <li>全部&nbsp></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lvyou w1170 bc">
+            <ul class="lylist">
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+                <li class="fl">
+                    <a href="#"><img src="./images/shop1.webp" alt=""></a>
+                    <h4><a href="#">[顺义城区]比亚森</a></h4>
+                    <p>午餐晚餐单人自助，提供免费WIFI</p>
+                    <ul>
+                        <li class="fl">
+                            <span class="prise">￥59.6</span>
+                            <span class="oprise">门店价&nbsp<del>￥65</del></span>
+                        </li>
+                        <li class="fr">
+                            <span>已售2977</span>
+                        </li>
+                    </ul>
+                    <div class="pingjia">
+                        <i></i>
+                        <span>39人评价</span>
+                    </div>
+                    <div class="biaoqian1">
+                        <p>多<br>套餐</p>
+                    </div>
+                    <div class="biaoqian2">
+                        <p>免<br>预约</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="morelr w1170 bc">
+            <a href="#">更多旅游团购，请点击查看<span> ></span></a>
+        </div>
+        <!-- 旅游 end -->
+        <!-- 网站底部 start -->
+        <div class="foot w1170 bc">
+            <ul class="footnav">
+                <li>团购分类
+                    <ul class="footcover1">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+                <li>今日新单
+                    <ul class="footcover2">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+                <li>周边城市
+                    <ul class="footcover3">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+                <li>品牌推荐
+                    <ul class="footcover4">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+                <li>专题推荐
+                    <ul class="footcover5">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+                <li>品类推荐
+                    <ul class="footcover6">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+                <li>友情链接
+                    <ul class="footcover7">
+                        <li><a href="#">美食团购</a></li>
+                        <li><a href="#">电影团购</a></li>
+                        <li><a href="#">休闲娱乐团购</a></li>
+                        <li><a href="#">旅游团购</a></li>
+                        <li><a href="#">生活服务团购</a></li>
+                        <li><a href="#">购物团购</a></li>
+                        <li><a href="#">丽人团购</a></li>
+                        <li><a href="#">团购评论</a></li>
+                        <li><a href="#">品牌团购</a></li>
+                        <li><a href="#">专题团购</a></li>
+                        <li><a href="#">美团团购</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="help w1170 bc">
+            <dl class="fl">
+                <div>
+                    <dt>获取更新</dt>
+                        <dd>邮件订阅</dd>
+                        <dd>iphone/android</dd>
+                        <dd>美团QQ空间</dd>
+                        <dd>美团新浪微博</dd>
+                        <dd>sitemap</dd>
+                        <dd>RSS订阅</dd>
+                </div>
+                <div>
+                    <dt>商务合作</dt>
+                        <dd>商家合作</dd>
+                        <dd>美团商家营销平台</dd>
+                        <dd>到店餐饮代理商招募</dd>
+                        <dd>市场合作</dd>
+                        <dd>美团联盟</dd>
+                        <dd>美团云</dd>
+                        <dd>廉政邮箱</dd>
+                        <dd>聚宝盆餐饮开放平台</dd>
+                        <dd>美团点评智能收银机</dd>
+                </div>
+                <div>
+                    <dt>公司信息</dt>
+                        <dd>关于美团</dd>
+                        <dd>美团承诺</dd>
+                        <dd>媒体报道</dd>
+                        <dd>加入我们</dd>
+                        <dd>法律声明</dd>
+                        <dd>用户协议</dd>
+                        <dd>隐私政策</dd>
+                        <dd>商户服务协议</dd>
+                        <dd>美团点评餐饮安全管理办法</dd>
+                </div>
+                <div>
+                    <dt>用户帮助</dt>
+                        <dd>申请退款</dd>
+                        <dd>查看美团卷密码</dd>
+                        <dd>查看问题</dd>
+                        <dd>开放API</dd>
+                        <dd>反诈骗公告</dd>
+                </div>
+            </dl>
+            <div class="phone fl">
+                <i class="hotline"></i>
+            </div>
+        </div>
+        <!-- 网站底部 end -->
+        <!-- 版权 start -->
+        <div class="bq w1170 bc">
+            <i></i>
+        </div>
+        <!-- 版权 end -->
+    </div>
+    <!-- 整个页面 end -->
+</body>
+</html>
